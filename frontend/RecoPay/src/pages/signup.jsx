@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signupUser } from "../api/auth";
-import "./login.css"; // ✅ reuse same styling
+import "./styles/login.css"; // reuse same styling
 
 function Signup() {
 

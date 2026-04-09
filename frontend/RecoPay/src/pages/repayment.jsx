@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { LoanContext } from "../context/LoanContext";
-import "./repayment.css";
+import "./styles/repayment.css";
 
 function Repayment() {
 

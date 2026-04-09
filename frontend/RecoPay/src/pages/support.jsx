@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./support.css";
+import "./styles/support.css";
 
 function Support() {
 
@@ -13,7 +13,7 @@ function Support() {
     const [success, setSuccess] = useState(false);
 
     const fetchTickets = async () => {
-        const res = await fetch("http://localhost:5000/api/tickets");
+        const res = await fetch("http://localhost:3000/api/tickets");
         const data = await res.json();
         setTickets(data);
     };
@@ -32,7 +32,7 @@ function Support() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        await fetch("http://localhost:5000/api/tickets", {
+        await fetch("http://localhost:3000/api/tickets", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(form)
@@ -45,7 +45,7 @@ function Support() {
     };
 
     const handleResolve = async (id) => {
-        await fetch(`http://localhost:5000/api/tickets/${id}`, {
+        await fetch(`http://localhost:3000/api/tickets/${id}`, {
             method: "PUT"
         });
 

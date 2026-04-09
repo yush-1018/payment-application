@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LoanContext } from "../context/LoanContext";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-import "./transactions.css";
+import "./styles/transactions.css";
 
 function Transactions() {
 

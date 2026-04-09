@@ -1,5 +1,5 @@
 export const applyLoan = async (data) => {
-    const res = await fetch("http://localhost:5000/loan/apply", {
+    const res = await fetch("http://localhost:3000/api/loans", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

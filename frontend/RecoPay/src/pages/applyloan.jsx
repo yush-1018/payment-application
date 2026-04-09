@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { LoanContext } from "../context/LoanContext";
-import "./applyloan.css";
+import "./styles/applyloan.css";
 
 function ApplyLoan() {
 
